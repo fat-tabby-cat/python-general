@@ -36,6 +36,7 @@ data["ISO_code"]="JP"+data_no
 data=data[["pref_name", "pref_code","ISO_code","populations_christ"]]
 
 #行政區大小與人口密度（抓英文維基百科表格用Calc後製成csv：維基百科似乎有防爬功能）
+#https://en.wikipedia.org/wiki/Prefectures_of_Japan#By_English_name
 data_wiki=pd.read_csv("japan_population.csv",encoding="utf-8")
 data_wiki=data_wiki[['iso_code','population_concensus','area']]
 
